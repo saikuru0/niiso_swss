@@ -1,0 +1,6 @@
+[submodule "niiso"]
+	path = niiso
+	url = https://github.com/saikuru0/niiso
+[submodule "simplewss"]
+	path = simplewss
+	url = https://gitlab.com/eidheim/Simple-WebSocket-Server
