@@ -3,7 +3,7 @@ CFLAGS = -std=c++11 -Wall -pthread
 LDFLAGS = -lssl -lcrypto
 
 SRC = main.cpp
-LIBS = niiso/niiso.hpp
+LIBS = niiso/niiso.hpp simplewss/client_wss.hpp
 TARGET = app
 
 all: $(TARGET)
