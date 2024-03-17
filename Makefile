@@ -3,7 +3,7 @@ CFLAGS = -std=c++11 -Wall -pthread -Iniiso/json/include
 LDFLAGS = -lssl -lcrypto
 
 SRC = main.cpp
-LIBS = niiso/niiso.hpp simplewss/client_wss.hpp
+LIBS = niiso/niiso.hpp simplewss/client_wss.hpp eckser/main.py
 TARGET = app
 
 all: $(TARGET)

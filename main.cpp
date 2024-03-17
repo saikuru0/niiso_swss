@@ -18,14 +18,14 @@ namespace config {
 };
 
 int main(int argc, char** argv) {
-	if (argc != 4) {
-		std::cout << "Wrong usage, needs exactly 3 args: " << argv[0] << " chat_url user_id auth_key\n";
+	if (argc != 2) {
+		std::cout << "Wrong usage, needs exactly 1 arg: " << argv[0] << " chat_url\n";
 		exit(EXIT_FAILURE);
 	}
 	config::uri =  argv[1];
 	config::uid = argv[2];
 	config::auth = argv[3];
-	Niiso* niiso = new Niiso(config::uid, config::auth);
+	Niiso* niiso = new Niiso();
 	std::shared_ptr<WssClient::Connection> conn;
 	WssClient client(config::uri, true);
 

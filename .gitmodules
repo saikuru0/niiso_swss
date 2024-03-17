@@ -4,3 +4,7 @@
 [submodule "simplewss"]
 	path = simplewss
 	url = https://gitlab.com/eidheim/Simple-WebSocket-Server
+[submodule "eckser"]
+	path = eckser
+	url = git@github.com:saikuru0/eckser.git
+	branch = master
