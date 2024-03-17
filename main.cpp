@@ -23,8 +23,6 @@ int main(int argc, char** argv) {
 		exit(EXIT_FAILURE);
 	}
 	config::uri =  argv[1];
-	config::uid = argv[2];
-	config::auth = argv[3];
 	Niiso* niiso = new Niiso();
 	std::shared_ptr<WssClient::Connection> conn;
 	WssClient client(config::uri, true);
